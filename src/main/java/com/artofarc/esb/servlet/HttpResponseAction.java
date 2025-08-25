@@ -20,9 +20,7 @@ import java.util.List;
 import java.util.Map.Entry;
 
 import javax.mail.internet.MimeMultipart;
-import javax.servlet.AsyncContext;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+
 
 import com.artofarc.esb.action.Action;
 import com.artofarc.esb.context.Context;
@@ -35,6 +33,10 @@ import com.artofarc.esb.message.ESBMessage;
 import com.artofarc.esb.message.MimeHelper;
 import com.artofarc.util.ByteArrayOutputStream;
 import com.artofarc.util.IOUtils;
+
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.AsyncContext;
 
 public class HttpResponseAction extends Action {
 
